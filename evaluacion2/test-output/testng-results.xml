@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="108978" started-at="2015-12-10T17:44:13Z" finished-at="2015-12-10T17:46:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="108978" started-at="2015-12-10T17:44:13Z" finished-at="2015-12-10T17:46:02Z">
+      <class name="com.globant.tests.Tests">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.tests.Tests@2133c8f8]" name="before" is-config="true" duration-ms="2925" started-at="2015-12-10T14:44:13Z" finished-at="2015-12-10T14:44:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testSearchACruiseAndChecksIfTheInformationIsCorrectlyCharged()[pri:0, instance:com.globant.tests.Tests@2133c8f8]" name="testSearchACruiseAndChecksIfTheInformationIsCorrectlyCharged" duration-ms="106032" started-at="2015-12-10T14:44:16Z" finished-at="2015-12-10T14:46:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchACruiseAndChecksIfTheInformationIsCorrectlyCharged -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.tests.Tests@2133c8f8]" name="after" is-config="true" duration-ms="12" started-at="2015-12-10T14:46:02Z" finished-at="2015-12-10T14:46:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
