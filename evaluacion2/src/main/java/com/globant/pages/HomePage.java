@@ -307,7 +307,7 @@ public class HomePage extends BasePage {
 	}
 
 	public ResultsPage buttonSearchClick() {
-		sleep();
+		waitForJQueryProcessing(10,driver);
 		buttonSearch.click();
 		return new ResultsPage(driver);
 	}

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.globant.tests.Tests">
         <methods>
-          <include name="testSearchFlightHotelCarAndNavigateToTripInformation"/>
+          <include name="testSearchFlightAndNavigateToTripInformation"/>
           <include name="before"/>
           <include name="after"/>
         </methods>

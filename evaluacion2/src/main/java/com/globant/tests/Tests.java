@@ -83,9 +83,6 @@ public class Tests extends BaseTestsSuite {
 
 		ResultsPage resultsPage = home.searchFligth(origin, destination, adults, daysAfter, monthsAfter);
 
-		// TODO: Waits for AJAX did not work. Please clarify the correct approach.
-		// home.waitForAjax();
-
 		verifySubmitedDataResults(resultsPage, daysAfter, monthsAfter, origin, destination);
 
 		resultsPage.sortBy(sort);
@@ -260,8 +257,6 @@ public class Tests extends BaseTestsSuite {
 	}
 
 	public void verifySubmitedDataResults(ResultsPage results,Integer daysAfter,Integer monthsAfter,String origin ,String destination){
-
-		//TODO: Replace Assert.assertTrue by Assert.assertEquals
 
 		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
 		Calendar cal = Calendar.getInstance(); 

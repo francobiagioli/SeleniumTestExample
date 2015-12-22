@@ -42,6 +42,24 @@ public class BasePage {
 		button.click();
 	}
 
-
+	public static boolean waitForJQueryProcessing (int timeOutInSeconds,WebDriver drive) {
+		boolean jQcondition = false;
+		WebDriver driver = drive;
+		try {
+			driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+			new WebDriverWait(driver, timeOutInSeconds) {
+			}.until(new ExpectedCondition<Boolean>() {
+				@Override
+				public Boolean apply(WebDriver driverObject) {
+					return (Boolean) ((JavascriptExecutor) driverObject).executeScript("return jQuery.active == 0");
+				}
+			});
+			jQcondition = (Boolean) ((JavascriptExecutor) driver).executeScript("return jQuery.active == 0");
+			driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS); // reset implicitlyWait
+			return jQcondition;
+		} catch (Exception e) {
+		}
+		return jQcondition;
+	}
 
 }
