@@ -40,7 +40,7 @@ public class HotelPage extends BasePage {
 	}
 
 	public WebElement searchedHotel(){
-		sleep();
+		waitForJQueryProcessing(10,driver);
 		return listHotelsResult.findElements(By.xpath(hotel)).get(0);
 	}
 }
