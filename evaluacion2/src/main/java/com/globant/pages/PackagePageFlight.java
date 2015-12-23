@@ -23,7 +23,7 @@ public class PackagePageFlight extends BasePage {
 	}
 
 	public PackagePageCar selectReturnFlight(Integer index){
-		sleep();
+		waitForJQueryProcessing(10,driver);
 		resultFlightList.findElements(By.xpath(resultFligths)).get(index-1).click();//the index starts at 0 so I subtract 1 
 		return new PackagePageCar(driver);
 	}

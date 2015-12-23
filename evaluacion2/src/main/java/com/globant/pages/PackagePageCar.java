@@ -24,7 +24,7 @@ public class PackagePageCar extends BasePage {
 	}
 	
 	public PackageTripDetailPage selectCar(Integer index){
-		sleep();
+		waitForJQueryProcessing(10,driver);
 		carList().get(index-1).click();//the index starts at 0 so I subtract 1 
 		
 		return new PackageTripDetailPage(driver);
