@@ -194,7 +194,7 @@ public class HomePage extends BasePage {
 	}
 
 	public HomePage setCheckPartialStay() {
-		sleep();
+		waitForJQueryProcessing(10,driver);
 		checkPartialBooking.click();
 		return this;
 	}
@@ -251,7 +251,7 @@ public class HomePage extends BasePage {
 	}
 
 	public HomePage selectCalendarDateReturning(Calendar calendar,Integer daysAfter,String type){
-		sleep();
+		waitForJQueryProcessing(10,driver);
 		calendar.add(Calendar.DAY_OF_MONTH, daysAfter);
 
 		switch(type){
