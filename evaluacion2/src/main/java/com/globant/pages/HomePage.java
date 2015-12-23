@@ -226,6 +226,7 @@ public class HomePage extends BasePage {
 
 	public HomePage fillComboNumberAdults(String adults,String type){
 		switch(type){
+		
 		case "package":
 			return sendKeys(comboNumberAdultsPackage,adults);	
 		case "flight":
