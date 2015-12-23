@@ -19,6 +19,11 @@ public class BasePage {
 	}
 
 	public Boolean waitForAjax(){
+		
+		
+		
+		//deprecated erase when all sleeps deleted
+		
 		//didnt work , so I had to use the sleep method
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.pollingEvery(200, TimeUnit.SECONDS);

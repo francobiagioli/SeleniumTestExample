@@ -46,7 +46,7 @@ public class PackagePageHotel extends BasePage{
 	}
 
 	public WebElement getLabelFrom(){
-		sleep();
+		waitForJQueryProcessing(10,driver);
 		return labelFrom;
 	}
 	public WebElement getFieldTo(){
@@ -67,7 +67,7 @@ public class PackagePageHotel extends BasePage{
 	}
 
 	public List<WebElement> getPriceList(){
-		sleep();
+		waitForJQueryProcessing(10,driver);
 		return packageList.findElements(By.xpath(packageResultsListPrice));
 	}
 
